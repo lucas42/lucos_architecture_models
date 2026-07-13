@@ -41,6 +41,7 @@ flowchart LR
   lucos_creds -.credentialUpdated.-> lucos_loganne
   lucos_deploy_orb -.deploySystem.-> lucos_loganne
   lucos_deploy_orb -.publishedComponent.-> lucos_loganne
+  lucos_deploy_orb -.publishedOrb.-> lucos_loganne
   lucos_dns -.dns_config_changed.-> lucos_loganne
   lucos_eolas -.itemCreated.-> lucos_loganne
   lucos_eolas -.itemUpdated.-> lucos_loganne
