@@ -64,6 +64,7 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_creds -> lucos_loganne "emits credentialUpdated"
         lucos_deploy_orb -> lucos_loganne "emits deploySystem"
         lucos_deploy_orb -> lucos_loganne "emits publishedComponent"
+        lucos_deploy_orb -> lucos_loganne "emits publishedOrb"
         lucos_dns -> lucos_loganne "emits dns_config_changed"
         lucos_eolas -> lucos_loganne "emits itemCreated"
         lucos_eolas -> lucos_loganne "emits itemUpdated"
