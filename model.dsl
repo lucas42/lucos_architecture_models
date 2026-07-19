@@ -42,6 +42,7 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lukeblaney_co_uk = softwareSystem "lukeblaney_co_uk" "lukeblaney.co.uk"
         semweb = softwareSystem "semweb" "semweb.lukeblaney.co.uk"
         tfluke = softwareSystem "tfluke" "app.tfluke.uk"
+        lucos_agent = element "lucos_agent" "configy script (event producer)"
 
         # sync dependencies (/_info dependsOn)
         lucos_backups -> lucos_configy "depends on (sync)"
@@ -54,6 +55,7 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_time -> lucos_eolas "depends on (sync)"
 
         # async event producers (→ loganne)
+        lucos_agent -> lucos_loganne "emits plannedMaintenance"
         lucos_arachne -> lucos_loganne "emits knowledgeIngest"
         lucos_arachne -> lucos_loganne "emits tripleStoreCompaction"
         lucos_backups -> lucos_loganne "emits backups"
