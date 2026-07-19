@@ -2,6 +2,7 @@
 
 ```mermaid
 flowchart LR
+  lucos_agent["lucos_agent"]
   lucos_arachne["lucos_arachne"]
   lucos_backups["lucos_backups"]
   lucos_configy["lucos_configy"]
@@ -31,6 +32,7 @@ flowchart LR
   lucos_time --> lucos_contacts
   lucos_time --> lucos_eolas
   %% async producers (dotted, → loganne)
+  lucos_agent -.plannedMaintenance.-> lucos_loganne
   lucos_arachne -.knowledgeIngest.-> lucos_loganne
   lucos_arachne -.tripleStoreCompaction.-> lucos_loganne
   lucos_backups -.backups.-> lucos_loganne
