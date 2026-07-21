@@ -78,6 +78,7 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_media_metadata_api -> lucos_loganne "emits collectionCreated"
         lucos_media_metadata_api -> lucos_loganne "emits trackUpdated"
         lucos_media_metadata_api -> lucos_loganne "emits trackWeightingUpdated"
+        lucos_media_metadata_api -> lucos_loganne "emits tracksUpdated"
         lucos_media_weightings -> lucos_loganne "emits weightings"
         lucos_monitoring -> lucos_loganne "emits monitoringAlert"
         lucos_monitoring -> lucos_loganne "emits monitoringAlertSuppressed"
