@@ -55,6 +55,7 @@ flowchart LR
   lucos_media_metadata_api -.collectionCreated.-> lucos_loganne
   lucos_media_metadata_api -.trackUpdated.-> lucos_loganne
   lucos_media_metadata_api -.trackWeightingUpdated.-> lucos_loganne
+  lucos_media_metadata_api -.tracksUpdated.-> lucos_loganne
   lucos_media_weightings -.weightings.-> lucos_loganne
   lucos_monitoring -.monitoringAlert.-> lucos_loganne
   lucos_monitoring -.monitoringAlertSuppressed.-> lucos_loganne
