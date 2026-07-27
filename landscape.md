@@ -38,6 +38,7 @@ flowchart LR
   lucos_backups -.backups.-> lucos_loganne
   lucos_backups -.prune-backups.-> lucos_loganne
   lucos_contacts -.contactCreated.-> lucos_loganne
+  lucos_contacts -.contactStarred.-> lucos_loganne
   lucos_contacts -.contactUpdated.-> lucos_loganne
   lucos_creds -.credentialDeleted.-> lucos_loganne
   lucos_creds -.credentialUpdated.-> lucos_loganne
@@ -64,6 +65,7 @@ flowchart LR
   lucos_photos -.facesMoved.-> lucos_loganne
   lucos_photos -.peopleMerged.-> lucos_loganne
   lucos_photos -.personContactLinked.-> lucos_loganne
+  lucos_photos -.personContactUnlinked.-> lucos_loganne
   lucos_photos -.personFlagged.-> lucos_loganne
   lucos_photos -.personMarkedBackground.-> lucos_loganne
   lucos_photos -.photoAdded.-> lucos_loganne
