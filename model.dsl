@@ -76,6 +76,7 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_media_manager -> lucos_loganne "emits deviceSwitch"
         lucos_media_manager -> lucos_loganne "emits fetchTracks"
         lucos_media_metadata_api -> lucos_loganne "emits albumCreated"
+        lucos_media_metadata_api -> lucos_loganne "emits artistCreated"
         lucos_media_metadata_api -> lucos_loganne "emits collectionCreated"
         lucos_media_metadata_api -> lucos_loganne "emits trackUpdated"
         lucos_media_metadata_api -> lucos_loganne "emits trackWeightingUpdated"
