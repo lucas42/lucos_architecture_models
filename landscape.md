@@ -53,6 +53,7 @@ flowchart LR
   lucos_media_manager -.deviceSwitch.-> lucos_loganne
   lucos_media_manager -.fetchTracks.-> lucos_loganne
   lucos_media_metadata_api -.albumCreated.-> lucos_loganne
+  lucos_media_metadata_api -.artistCreated.-> lucos_loganne
   lucos_media_metadata_api -.collectionCreated.-> lucos_loganne
   lucos_media_metadata_api -.trackUpdated.-> lucos_loganne
   lucos_media_metadata_api -.trackWeightingUpdated.-> lucos_loganne
