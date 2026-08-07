@@ -5,6 +5,7 @@ flowchart LR
   lucos_agent["lucos_agent"]
   lucos_arachne["lucos_arachne"]
   lucos_backups["lucos_backups"]
+  lucos_configy["lucos_configy"]
   lucos_contacts["lucos_contacts"]
   lucos_creds["lucos_creds"]
   lucos_deploy_orb["lucos_deploy_orb"]
@@ -22,6 +23,8 @@ flowchart LR
   lucos_router["lucos_router"]
   lucos_time["lucos_time"]
   %% sync deps (solid)
+  lucos_backups --> lucos_configy
+  lucos_backups --> lucos_configy
   lucos_media_metadata_manager --> lucos_media_metadata_api
   lucos_media_seinn --> lucos_media_manager
   lucos_media_weightings --> lucos_media_metadata_api
@@ -52,6 +55,7 @@ flowchart LR
   lucos_media_metadata_api -.albumCreated.-> lucos_loganne
   lucos_media_metadata_api -.artistCreated.-> lucos_loganne
   lucos_media_metadata_api -.collectionCreated.-> lucos_loganne
+  lucos_media_metadata_api -.trackAdded.-> lucos_loganne
   lucos_media_metadata_api -.trackUpdated.-> lucos_loganne
   lucos_media_metadata_api -.trackWeightingUpdated.-> lucos_loganne
   lucos_media_metadata_api -.tracksUpdated.-> lucos_loganne
