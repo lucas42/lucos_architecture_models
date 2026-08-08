@@ -29,8 +29,6 @@ flowchart LR
   lucos_media_seinn --> lucos_media_manager
   lucos_media_weightings --> lucos_media_metadata_api
   lucos_media_weightings --> lucos_time
-  lucos_time --> lucos_contacts
-  lucos_time --> lucos_eolas
   %% async producers (dotted, → loganne)
   lucos_agent -.plannedMaintenance.-> lucos_loganne
   lucos_arachne -.knowledgeIngest.-> lucos_loganne
