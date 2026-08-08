@@ -2,4 +2,4 @@
 
 None.
 
-Unreachable /_info: lucos_dns, lucos_dns_secondary
+Unreachable /_info: lucos_dns, lucos_dns_secondary, lucos_time
