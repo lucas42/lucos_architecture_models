@@ -51,6 +51,8 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_media_seinn -> lucos_media_manager "depends on (sync)"
         lucos_media_weightings -> lucos_media_metadata_api "depends on (sync)"
         lucos_media_weightings -> lucos_time "depends on (sync)"
+        lucos_time -> lucos_contacts "depends on (sync)"
+        lucos_time -> lucos_eolas "depends on (sync)"
 
         # async event producers (→ loganne)
         lucos_agent -> lucos_loganne "emits plannedMaintenance"
