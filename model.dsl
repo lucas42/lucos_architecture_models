@@ -45,8 +45,6 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_agent = element "lucos_agent" "configy script (event producer)"
 
         # sync dependencies (/_info dependsOn)
-        lucos_backups -> lucos_configy "depends on (sync)"
-        lucos_backups -> lucos_configy "depends on (sync)"
         lucos_media_metadata_manager -> lucos_media_metadata_api "depends on (sync)"
         lucos_media_seinn -> lucos_media_manager "depends on (sync)"
         lucos_media_weightings -> lucos_media_metadata_api "depends on (sync)"
