@@ -73,6 +73,7 @@ flowchart LR
   lucos_photos -.photoAdded.-> lucos_loganne
   lucos_photos -.photoProcessed.-> lucos_loganne
   lucos_photos -.profilePhotoUpdated.-> lucos_loganne
+  lucos_photos -.profilePictureSet.-> lucos_loganne
   lucos_photos -.videoAdded.-> lucos_loganne
   lucos_photos -.videoProcessed.-> lucos_loganne
   lucos_router -.certificateDeleted.-> lucos_loganne
