@@ -96,6 +96,7 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_photos -> lucos_loganne "emits photoAdded"
         lucos_photos -> lucos_loganne "emits photoProcessed"
         lucos_photos -> lucos_loganne "emits profilePhotoUpdated"
+        lucos_photos -> lucos_loganne "emits profilePictureSet"
         lucos_photos -> lucos_loganne "emits videoAdded"
         lucos_photos -> lucos_loganne "emits videoProcessed"
         lucos_router -> lucos_loganne "emits certificateDeleted"
