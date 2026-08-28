@@ -65,6 +65,7 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_contacts -> lucos_loganne "emits contactUpdated"
         lucos_creds -> lucos_loganne "emits credentialDeleted"
         lucos_creds -> lucos_loganne "emits credentialUpdated"
+        lucos_deploy_orb -> lucos_loganne "emits deployRollback"
         lucos_deploy_orb -> lucos_loganne "emits deploySystem"
         lucos_deploy_orb -> lucos_loganne "emits publishedComponent"
         lucos_deploy_orb -> lucos_loganne "emits publishedOrb"
