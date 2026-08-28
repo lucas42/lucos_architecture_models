@@ -42,6 +42,7 @@ flowchart LR
   lucos_contacts -.contactUpdated.-> lucos_loganne
   lucos_creds -.credentialDeleted.-> lucos_loganne
   lucos_creds -.credentialUpdated.-> lucos_loganne
+  lucos_deploy_orb -.deployRollback.-> lucos_loganne
   lucos_deploy_orb -.deploySystem.-> lucos_loganne
   lucos_deploy_orb -.publishedComponent.-> lucos_loganne
   lucos_deploy_orb -.publishedOrb.-> lucos_loganne
