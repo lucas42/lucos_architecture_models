@@ -39,6 +39,7 @@ flowchart LR
   lucos_backups -.prune-backups.-> lucos_loganne
   lucos_contacts -.contactCreated.-> lucos_loganne
   lucos_contacts -.contactStarred.-> lucos_loganne
+  lucos_contacts -.contactUnstarred.-> lucos_loganne
   lucos_contacts -.contactUpdated.-> lucos_loganne
   lucos_creds -.credentialDeleted.-> lucos_loganne
   lucos_creds -.credentialUpdated.-> lucos_loganne
