@@ -55,6 +55,7 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_time -> lucos_eolas "depends on (sync)"
 
         # async event producers (→ loganne)
+        lucos_agent -> lucos_loganne "emits persistentDirtDetected"
         lucos_agent -> lucos_loganne "emits plannedMaintenance"
         lucos_arachne -> lucos_loganne "emits knowledgeIngest"
         lucos_arachne -> lucos_loganne "emits tripleStoreCompaction"
