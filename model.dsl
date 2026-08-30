@@ -62,6 +62,7 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_backups -> lucos_loganne "emits prune-backups"
         lucos_contacts -> lucos_loganne "emits contactCreated"
         lucos_contacts -> lucos_loganne "emits contactStarred"
+        lucos_contacts -> lucos_loganne "emits contactUnstarred"
         lucos_contacts -> lucos_loganne "emits contactUpdated"
         lucos_creds -> lucos_loganne "emits credentialDeleted"
         lucos_creds -> lucos_loganne "emits credentialUpdated"
