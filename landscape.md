@@ -32,6 +32,7 @@ flowchart LR
   lucos_time --> lucos_contacts
   lucos_time --> lucos_eolas
   %% async producers (dotted, → loganne)
+  lucos_agent -.persistentDirtDetected.-> lucos_loganne
   lucos_agent -.plannedMaintenance.-> lucos_loganne
   lucos_arachne -.knowledgeIngest.-> lucos_loganne
   lucos_arachne -.tripleStoreCompaction.-> lucos_loganne
