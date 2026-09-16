@@ -20,6 +20,7 @@ flowchart LR
   lucos_media_weightings["lucos_media_weightings"]
   lucos_monitoring["lucos_monitoring"]
   lucos_photos["lucos_photos"]
+  lucos_root["lucos_root"]
   lucos_router["lucos_router"]
   lucos_time["lucos_time"]
   %% sync deps (solid)
@@ -80,6 +81,8 @@ flowchart LR
   lucos_photos -.profilePictureSet.-> lucos_loganne
   lucos_photos -.videoAdded.-> lucos_loganne
   lucos_photos -.videoProcessed.-> lucos_loganne
+  lucos_root -.serviceRecovered.-> lucos_loganne
+  lucos_root -.serviceUnavailable.-> lucos_loganne
   lucos_router -.certificateDeleted.-> lucos_loganne
   lucos_router -.certificateRenewed.-> lucos_loganne
   %% async consumers (dotted, loganne →)
