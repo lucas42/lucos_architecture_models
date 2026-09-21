@@ -58,6 +58,7 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_agent -> lucos_loganne "emits persistentDirtCleared"
         lucos_agent -> lucos_loganne "emits persistentDirtDetected"
         lucos_agent -> lucos_loganne "emits plannedMaintenance"
+        lucos_agent -> lucos_loganne "emits syncFailureRecovered"
         lucos_arachne -> lucos_loganne "emits knowledgeIngest"
         lucos_arachne -> lucos_loganne "emits tripleStoreCompaction"
         lucos_backups -> lucos_loganne "emits backups"
