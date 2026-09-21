@@ -36,6 +36,7 @@ flowchart LR
   lucos_agent -.persistentDirtCleared.-> lucos_loganne
   lucos_agent -.persistentDirtDetected.-> lucos_loganne
   lucos_agent -.plannedMaintenance.-> lucos_loganne
+  lucos_agent -.syncFailureRecovered.-> lucos_loganne
   lucos_arachne -.knowledgeIngest.-> lucos_loganne
   lucos_arachne -.tripleStoreCompaction.-> lucos_loganne
   lucos_backups -.backups.-> lucos_loganne
