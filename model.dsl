@@ -4,6 +4,7 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_aithne = softwareSystem "lucos_aithne" "aithne.l42.eu"
         lucos_arachne = softwareSystem "lucos_arachne" "arachne.l42.eu"
         lucos_backups = softwareSystem "lucos_backups" "backups.l42.eu"
+        lucos_campaigns = softwareSystem "lucos_campaigns" "campaigns.l42.eu"
         lucos_configy = softwareSystem "lucos_configy" "configy.l42.eu"
         lucos_contacts = softwareSystem "lucos_contacts" "contacts.l42.eu"
         lucos_contacts_googlesync_import = softwareSystem "lucos_contacts_googlesync_import" "(no public domain)"
