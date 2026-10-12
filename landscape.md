@@ -77,6 +77,7 @@ flowchart LR
   lucos_photos -.personFlagged.-> lucos_loganne
   lucos_photos -.personMarkedBackground.-> lucos_loganne
   lucos_photos -.photoAdded.-> lucos_loganne
+  lucos_photos -.photoDeleted.-> lucos_loganne
   lucos_photos -.photoProcessed.-> lucos_loganne
   lucos_photos -.profilePhotoUpdated.-> lucos_loganne
   lucos_photos -.profilePictureSet.-> lucos_loganne
