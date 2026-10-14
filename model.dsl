@@ -64,6 +64,7 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_arachne -> lucos_loganne "emits knowledgeIngest"
         lucos_arachne -> lucos_loganne "emits tripleStoreCompaction"
         lucos_backups -> lucos_loganne "emits backups"
+        lucos_backups -> lucos_loganne "emits backupsHeal"
         lucos_backups -> lucos_loganne "emits prune-backups"
         lucos_contacts -> lucos_loganne "emits contactCreated"
         lucos_contacts -> lucos_loganne "emits contactStarred"
