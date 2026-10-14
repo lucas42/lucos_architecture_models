@@ -41,6 +41,7 @@ flowchart LR
   lucos_arachne -.knowledgeIngest.-> lucos_loganne
   lucos_arachne -.tripleStoreCompaction.-> lucos_loganne
   lucos_backups -.backups.-> lucos_loganne
+  lucos_backups -.backupsHeal.-> lucos_loganne
   lucos_backups -.prune-backups.-> lucos_loganne
   lucos_contacts -.contactCreated.-> lucos_loganne
   lucos_contacts -.contactStarred.-> lucos_loganne
