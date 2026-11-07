@@ -73,8 +73,10 @@ flowchart LR
   lucos_monitoring -.monitoringAlertSuppressed.-> lucos_loganne
   lucos_monitoring -.monitoringRecovery.-> lucos_loganne
   lucos_monitoring -.monitoringSelfRestart.-> lucos_loganne
+  lucos_photos -.facesConfirmed.-> lucos_loganne
   lucos_photos -.facesMoved.-> lucos_loganne
   lucos_photos -.peopleMerged.-> lucos_loganne
+  lucos_photos -.peopleSplit.-> lucos_loganne
   lucos_photos -.personContactLinked.-> lucos_loganne
   lucos_photos -.personContactUnlinked.-> lucos_loganne
   lucos_photos -.personFlagged.-> lucos_loganne
