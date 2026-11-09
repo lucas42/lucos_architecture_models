@@ -98,6 +98,8 @@ workspace "lucOS estate" "Generated C4 model — DO NOT EDIT BY HAND" {
         lucos_monitoring -> lucos_loganne "emits monitoringSelfRestart"
         lucos_photos -> lucos_loganne "emits facesConfirmed"
         lucos_photos -> lucos_loganne "emits facesMoved"
+        lucos_photos -> lucos_loganne "emits facesRejected"
+        lucos_photos -> lucos_loganne "emits facesUnconfirmed"
         lucos_photos -> lucos_loganne "emits peopleMerged"
         lucos_photos -> lucos_loganne "emits peopleSplit"
         lucos_photos -> lucos_loganne "emits personContactLinked"
