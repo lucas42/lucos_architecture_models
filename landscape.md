@@ -75,6 +75,8 @@ flowchart LR
   lucos_monitoring -.monitoringSelfRestart.-> lucos_loganne
   lucos_photos -.facesConfirmed.-> lucos_loganne
   lucos_photos -.facesMoved.-> lucos_loganne
+  lucos_photos -.facesRejected.-> lucos_loganne
+  lucos_photos -.facesUnconfirmed.-> lucos_loganne
   lucos_photos -.peopleMerged.-> lucos_loganne
   lucos_photos -.peopleSplit.-> lucos_loganne
   lucos_photos -.personContactLinked.-> lucos_loganne
