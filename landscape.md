@@ -77,6 +77,7 @@ flowchart LR
   lucos_photos -.facesMoved.-> lucos_loganne
   lucos_photos -.facesRejected.-> lucos_loganne
   lucos_photos -.facesUnconfirmed.-> lucos_loganne
+  lucos_photos -.peopleMarkedBackground.-> lucos_loganne
   lucos_photos -.peopleMerged.-> lucos_loganne
   lucos_photos -.peopleSplit.-> lucos_loganne
   lucos_photos -.personContactLinked.-> lucos_loganne
